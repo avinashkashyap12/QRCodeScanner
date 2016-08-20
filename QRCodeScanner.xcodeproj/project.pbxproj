@@ -15,6 +15,7 @@
 		FD4A58691D6853CB00A07962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4A58671D6853CB00A07962 /* LaunchScreen.storyboard */; };
 		FD4A58741D6853CB00A07962 /* QRCodeScannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4A58731D6853CB00A07962 /* QRCodeScannerTests.m */; };
 		FD4A587F1D6853CB00A07962 /* QRCodeScannerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4A587E1D6853CB00A07962 /* QRCodeScannerUITests.m */; };
+		FD4A588D1D6853DF00A07962 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4A588C1D6853DF00A07962 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		FD4A587A1D6853CB00A07962 /* QRCodeScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4A587E1D6853CB00A07962 /* QRCodeScannerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeScannerUITests.m; sourceTree = "<group>"; };
 		FD4A58801D6853CB00A07962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD4A588C1D6853DF00A07962 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4A588D1D6853DF00A07962 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		FD4A584D1D6853CA00A07962 = {
 			isa = PBXGroup;
 			children = (
+				FD4A588C1D6853DF00A07962 /* AVFoundation.framework */,
 				FD4A58581D6853CB00A07962 /* QRCodeScanner */,
 				FD4A58721D6853CB00A07962 /* QRCodeScannerTests */,
 				FD4A587D1D6853CB00A07962 /* QRCodeScannerUITests */,
@@ -416,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QRCodeScanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.headerlabs.QRCodeScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QRCodeScanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.headerlabs.QRCodeScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
